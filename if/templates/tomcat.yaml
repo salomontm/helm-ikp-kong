@@ -19,7 +19,7 @@ spec:
 
      */}}
      {{ $version := "" }} 
-     {{ if eq .Values.entorno "desarrollo" }}
+     {{- if eq .Values.entorno "desarrollo" }}
      image: tomcat:9.0
      {{ else }}
      image: tomcat:10.0
